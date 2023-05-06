@@ -1,7 +1,7 @@
 #!/bin/bash
 set -o errexit -o nounset -o pipefail
 command -v shellcheck >/dev/null && shellcheck "$0"
-
+gnused="$(command -v gsed || echo sed)"
 gnused="$(command -v gsed || echo sed)"
 
 # Tendermint settings must be specified
